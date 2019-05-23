@@ -79,6 +79,7 @@ header nav {
 	color: #f7f9ff;
 	border-radius: 20px;
 	align-self: center;
+	text-align: center;
 } 
 
 .big-button:hover {
