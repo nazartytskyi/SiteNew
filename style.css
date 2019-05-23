@@ -1,0 +1,307 @@
+body {
+	font-family: Roboto;
+	margin: 0;
+	background-color: #3c4b66;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #f7f9ff; 
+}
+
+body * {
+	box-sizing: border-box;
+}
+section {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#main-section {
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	width: 430px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo h1 {
+	margin: 15px;
+	font-size: 36px;
+}
+
+.menu-item {
+	text-transform: uppercase;
+	padding: 3px;
+	color: #f7f9ff;
+	text-decoration: none;
+}
+
+.menu-item:hover {
+	border: 1px solid #f7f9ff; 
+	border-radius: 10px;
+}
+
+.about {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#main-section .big-button {
+	margin-bottom: 20vh;
+} 
+
+.big-button {
+	text-transform: uppercase;
+	padding: 12px;
+	background-color: #a3cd8c;
+	text-decoration: none;
+	font-weight: bold;
+	color: #f7f9ff;
+	border-radius: 20px;
+	align-self: center;
+} 
+
+.big-button:hover {
+	filter: brightness(90%);
+}
+
+.big-header {
+	font-size: 40px;
+}
+
+.all-fav-films {
+	align-items: center;
+}
+
+.films-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.film-block {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	align-items: center;
+}
+
+.small-img {
+	width: 90%;
+}
+
+.fav-film {
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	align-items: center;
+}
+
+.description-block {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.main-img { 
+	display: block;
+	width: 50%;
+	padding: 20px;
+	margin: 10px;
+}
+
+.big-img {
+	max-width:100%; 
+}
+
+.fav-film:nth-child(7) {
+	flex-direction: row-reverse;
+}
+
+.small-header {
+	text-align: center;
+	font-size: 26px;
+}
+.simple-header {
+	text-align: center;
+	font-size: 32px;
+	margin: 20px;
+	margin-bottom: 10px;
+
+}
+.about .paragraph {
+	text-align: center;
+}
+.paragraph {
+	padding: 10px;
+	padding-top: 0;
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 2px solid #56627e;
+}
+
+#top3{
+	background-image: url(img/bg2.jpg);
+	background-size:cover; 
+	background-repeat: no-repeat;
+}
+#contact-us {
+	background-image: url(img/bg1.jpg);
+	background-size:cover; 
+	background-repeat: no-repeat;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 400px;
+	width: 400px;
+	background-color: white;
+	padding: 20px;
+	padding-top: 0px;
+	border-radius: 5px;
+}
+
+input {
+	border: none;
+	background-color: #ebeff4;
+	width: 100%;
+	height: 40px;
+	padding: 3px;
+	padding-left: 10px;
+}
+
+textarea{
+	padding: 10px;
+	border: none;
+	background-color: #ebeff4;
+	width: 100%;
+	height: 120px;
+
+}
+
+form h3 {
+	color: #4a4a4a;
+	font-size: 30px;
+	padding: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+#submit-btn {
+	background-color: #7da3d7;
+	font-size: 24px;
+	font-weight: bolder;
+	border-radius: 8px;
+	color: #f7f9ff;
+}
+
+#submit-btn:hover {
+	filter: brightness(90%);
+}
+
+.bottom {
+	align-items: center;
+	height: 400px;
+	justify-content: space-between;
+}
+
+.bottom-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 70px;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.fav-film:nth-child(7) {
+		flex-direction: column;
+	}
+
+	.fav-film {
+		flex-direction: column;
+	}
+	
+	.main img {
+		width: 70%
+	}
+
+	.description-block {
+		width: 80%;
+	}
+
+	.films-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.film-block {
+		width: 75%;
+	}
+
+	.menu-item {
+		font-size: 12px;
+	}
+}
+	@media only screen and (min-width: 1500px) {
+		.paragraph{
+			font-size: 20px;
+		}
+
+		.menu-items{
+			font-size: 20px;
+		}
+
+		.small-header{
+			font-size: 30px;
+		}
+
+		.simple-header{
+			font-size: 36px;
+		}
+
+		.big-header{
+			font-size: 42px;
+		}
+}
